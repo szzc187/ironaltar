@@ -1,4 +1,13 @@
 @font-face {
+    font-family: 'MyriadProBlackSemiExtIt';
+    src: url('../fonts/MyriadProBlackSemiExt.eot');
+    src: url('../fonts/MyriadProBlackSemiExt.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/MyriadProBlackSemiExt.woff2') format('woff2'),
+         url('../fonts/MyriadProBlackSemiExt.woff') format('woff'),
+         url('../fonts/MyriadProBlackSemiExt.ttf') format('truetype'),
+         url('../fonts/MyriadProBlackSemiExt.svg#MyriadProBlackSemiExtIt') format('svg');
+}
+@font-face {
     font-family: 'robo';
     src: url('../fonts/RobotoLight.eot');
     src: url('../fonts/RobotoLight.eot?#iefix') format('embedded-opentype'),
@@ -6,36 +15,6 @@
          url('../fonts/RobotoLight.woff') format('woff'),
          url('../fonts/RobotoLight.ttf') format('truetype'),
          url('../fonts/RobotoLight.svg#RobotoLight') format('svg');
-}
-
-@font-face {
-    font-family: 'logo';
-    src: url('../fonts/EAWPolskieznaki.eot');
-    src: url('../fonts/EAWPolskieznaki.eot') format('embedded-opentype'),
-         url('../fonts/EAWPolskieznaki.woff2') format('woff2'),
-         url('../fonts/EAWPolskieznaki.woff') format('woff'),
-         url('../fonts/EAWPolskieznaki.ttf') format('truetype'),
-         url('../fonts/EAWPolskieznaki.svg#EAWPolskieznaki') format('svg');
-}
-
-@font-face {
-    font-family: 'logotext';
-    src: url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.eot');
-    src: url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.eot') format('embedded-opentype'),
-         url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.woff2') format('woff2'),
-         url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.woff') format('woff'),
-         url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.ttf') format('truetype'),
-         url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.svg#LOGOWYPE_NIONETRO_JKA_T2') format('svg');
-}
-
-@font-face {
-    font-family: 'impact';
-    src: url('../fonts/impact.eot');
-    src: url('../fonts/impact.eot') format('embedded-opentype'),
-         url('../fonts/impact.woff2') format('woff2'),
-         url('../fonts/impact.woff') format('woff'),
-         url('../fonts/impact.ttf') format('truetype'),
-         url('../fonts/impact.svg#impact') format('svg');
 }
 
 //text on subpages
@@ -59,18 +38,12 @@ padding: 0.5cm 2cm;
     font-weight: bold;
     font-size: 28px;
 }
-.fontLogotyp1{
-    font-family: 'logo', Fallback, sans-serif;
-    font-size: 30px;
-
-}
-.fontLogotyp2{
-    font-family: 'logotext', Fallback, sans-serif;
-    font-size: 200px;
-}
 .textsBackgroud{
     background-color: @footerGrey;
 }
 .facebook{
     font-size: 2em;
+}
+.headersFont{
+    font-family: 'MyriadProBlackSemiExtIt', Fallback, sans-serif;
 }

@@ -1,22 +1,12 @@
 @font-face {
+  font-family: 'MyriadProBlackSemiExtIt';
+  src: url('../fonts/MyriadProBlackSemiExt.eot');
+  src: url('../fonts/MyriadProBlackSemiExt.eot?#iefix') format('embedded-opentype'), url('../fonts/MyriadProBlackSemiExt.woff2') format('woff2'), url('../fonts/MyriadProBlackSemiExt.woff') format('woff'), url('../fonts/MyriadProBlackSemiExt.ttf') format('truetype'), url('../fonts/MyriadProBlackSemiExt.svg#MyriadProBlackSemiExtIt') format('svg');
+}
+@font-face {
   font-family: 'robo';
   src: url('../fonts/RobotoLight.eot');
   src: url('../fonts/RobotoLight.eot?#iefix') format('embedded-opentype'), url('../fonts/RobotoLight.woff2') format('woff2'), url('../fonts/RobotoLight.woff') format('woff'), url('../fonts/RobotoLight.ttf') format('truetype'), url('../fonts/RobotoLight.svg#RobotoLight') format('svg');
-}
-@font-face {
-  font-family: 'logo';
-  src: url('../fonts/EAWPolskieznaki.eot');
-  src: url('../fonts/EAWPolskieznaki.eot') format('embedded-opentype'), url('../fonts/EAWPolskieznaki.woff2') format('woff2'), url('../fonts/EAWPolskieznaki.woff') format('woff'), url('../fonts/EAWPolskieznaki.ttf') format('truetype'), url('../fonts/EAWPolskieznaki.svg#EAWPolskieznaki') format('svg');
-}
-@font-face {
-  font-family: 'logotext';
-  src: url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.eot');
-  src: url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.eot') format('embedded-opentype'), url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.woff2') format('woff2'), url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.woff') format('woff'), url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.ttf') format('truetype'), url('../fonts/LOGOWYPE_NIONETRO_JKA_T2.svg#LOGOWYPE_NIONETRO_JKA_T2') format('svg');
-}
-@font-face {
-  font-family: 'impact';
-  src: url('../fonts/impact.eot');
-  src: url('../fonts/impact.eot') format('embedded-opentype'), url('../fonts/impact.woff2') format('woff2'), url('../fonts/impact.woff') format('woff'), url('../fonts/impact.ttf') format('truetype'), url('../fonts/impact.svg#impact') format('svg');
 }
 .title {
   font-size: 25px;
@@ -38,19 +28,14 @@
   font-weight: bold;
   font-size: 28px;
 }
-.fontLogotyp1 {
-  font-family: 'logo', Fallback, sans-serif;
-  font-size: 30px;
-}
-.fontLogotyp2 {
-  font-family: 'logotext', Fallback, sans-serif;
-  font-size: 200px;
-}
 .textsBackgroud {
   background-color: #f1f1f1;
 }
 .facebook {
   font-size: 2em;
+}
+.headersFont {
+  font-family: 'MyriadProBlackSemiExtIt', Fallback, sans-serif;
 }
 .buttonTop {
   position: fixed;
@@ -170,7 +155,7 @@
 .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
-  padding: 10px 16px;
+  padding: 2px 4px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
@@ -228,7 +213,7 @@ ul {
   top: 1vw;
   float: right;
   background: #97aebe;
-  font-size: 3vw;
+  font-size: 2.5vw;
   font-weight: bold;
 }
 .productsTitle {
@@ -347,15 +332,12 @@ ul {
     font-size: 11px;
   }
   .footerFont1 {
-    font-size: 11px;
+    font-size: 2vw;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     height: 150px;
     width: 50%;
-  }
-  #br {
-    display: none;
   }
   .middleVerticalAlign {
     display: -webkit-box;
@@ -393,16 +375,12 @@ ul {
     display: none;
   }
   .footerFont1 {
-    font-size: 18px;
+    font-size: 2vw;
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
     height: 150px;
-    width: 100%;
-    text-align: center;
-  }
-  .productsTitle {
-    font-size: 15px;
+    width: 50%;
   }
   .productsTitles {
     font-size: 15px;
@@ -442,18 +420,6 @@ ul {
   }
   #doubleLine {
     display: none;
-  }
-  .footerFont1 {
-    font-size: 18px;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 150px;
-    width: 100%;
-    text-align: center;
-  }
-  .productsTitle {
-    font-size: 15px;
   }
   .productsTitles {
     font-size: 15px;
@@ -531,11 +497,25 @@ ul {
     left: 0;
     right: 0;
   }
+  .footerFont1 {
+    font-size: 1.5vw;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 150px;
+    width: 50%;
+  }
   .textProductThumbnail1 {
     font-size: 10px;
   }
   .textProductThumbnail2 {
     font-size: 10px;
+  }
+  .overlay {
+    font-size: 3.5vw;
+  }
+  .productsTitle {
+    font-size: 3.5vw;
   }
 }
 @media (max-width: 361px) {

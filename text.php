@@ -5,8 +5,6 @@
 <body>
 <?php include 'fragments/preloader.html';?>
 <?php include 'fragments/header.html';?>
-
-
 <div class="row jumbotron marginTopBottom textsBackgroud"> 
         <div class="col-xs-12 col-sm-4 col-md-4 textSide centerTextAlign">
             <?php
@@ -44,8 +42,7 @@
             echo $col;
              ?>
             </div> 
-        <div class="col-xs-12 col-sm-8 col-md-8 texts">
-
+        <article class="col-xs-12 col-sm-8 col-md-8 texts">
 <?php
                 $col = $_GET['col'];
                 include 'php/connection.php';
@@ -58,9 +55,8 @@
                 mysqli_close($link);
 ?>
 
-        </div>
+        </article>
 </div>
-
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/facebook.html';?>
 <?php include 'fragments/footer.html';?>

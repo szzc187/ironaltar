@@ -1,16 +1,13 @@
 <div class="row greyLineMargin">
         <div class="col-xs-5 col-sm-5 col-md-5"></div>
-        <div class="col-xs-7 col-sm-7 col-md-7 leftTextAlign productsTitle" id="scrollProductButton">PRODUKTY</div>
+        <div class="col-xs-7 col-sm-7 col-md-7 leftTextAlign productsTitle headersFont" id="scrollProductButton">PRODUKTY</div>
     </div>
-
-<div class="car marginTopBottom10 marginSlick"> 
-
+<section class="car marginTopBottom10 marginSlick"> 
 <?php
   include 'php/connection.php';
   $strSQL = "SELECT * FROM product ORDER BY id ASC";
 	$rs = mysqli_query($link,$strSQL);
-	  while($row = mysqli_fetch_array($rs)) {
-    
+	  while($row = mysqli_fetch_array($rs)) {   
     echo '
     <div class="col-sm-6 col-md-4 ">
       <div class="thumbnail">
@@ -22,9 +19,7 @@
         </div>
      </div>
           ';
-
     }
     	mysqli_close($link);
 ?>
-
-</div>
+</section>
