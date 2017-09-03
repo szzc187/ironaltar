@@ -16,9 +16,6 @@
   #numberMobile {
     display: none;
   }
-  #br {
-    display: none;
-  }
   .middleVerticalAlign {
     display: -webkit-box;
     display: -webkit-flex;
@@ -49,6 +46,9 @@
   .productsTitle {
     font-size: 30px;
   }
+  #br {
+    display: none;
+  }
 }
 @media (min-width: 800px) and (max-width: 979px) {
   .navbar-brand {
@@ -60,14 +60,6 @@
   .navbar {
     margin-bottom: 0;
     font-size: 11px;
-  }
-  .footerFont1 {
-    font-size: 2vw;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 150px;
-    width: 50%;
   }
   .middleVerticalAlign {
     display: -webkit-box;
@@ -93,6 +85,9 @@
     align-items: center;
     justify-content: center;
   }
+  #br {
+    display: none;
+  }
 }
 @media (max-width: 799px) {
   #banner {
@@ -103,14 +98,6 @@
   }
   #doubleLine {
     display: none;
-  }
-  .footerFont1 {
-    font-size: 2vw;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 150px;
-    width: 50%;
   }
   .productsTitles {
     font-size: 15px;
@@ -139,6 +126,18 @@
   }
   .textProductThumbnail2 {
     font-size: 12px;
+  }
+  .texts {
+    font-size: 15px;
+    padding: 0 0;
+  }
+  .footerFont1 {
+    font-weight: bold;
+    text-align: center;
+  }
+  .verticalMiddleAlign {
+    position: relative;
+    top: 5%;
   }
 }
 @media (max-width: 680px) {
@@ -179,6 +178,14 @@
   .textProductThumbnail2 {
     font-size: 12px;
   }
+  .footerFont1 {
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: center;
+  }
+  .preWrap {
+    white-space: pre-wrap;
+  }
 }
 @media (max-width: 580px) {
   .thumbnail {
@@ -206,6 +213,10 @@
   .textProductThumbnail2 {
     font-size: 10px;
   }
+  .verticalMiddleAlign {
+    position: relative;
+    top: 5%;
+  }
 }
 @media (max-width: 481px) {
   .thumbnail {
@@ -227,14 +238,6 @@
     left: 0;
     right: 0;
   }
-  .footerFont1 {
-    font-size: 1.5vw;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 150px;
-    width: 50%;
-  }
   .textProductThumbnail1 {
     font-size: 10px;
   }
@@ -246,6 +249,10 @@
   }
   .productsTitle {
     font-size: 3.5vw;
+  }
+  .verticalMiddleAlign {
+    position: relative;
+    top: 10%;
   }
 }
 @media (max-width: 361px) {
@@ -273,6 +280,10 @@
   }
   .textProductThumbnail2 {
     font-size: 9px;
+  }
+  .verticalMiddleAlign {
+    position: relative;
+    top: 15%;
   }
 }
 @media (max-width: 280px) {

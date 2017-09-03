@@ -1,17 +1,21 @@
 <div class="row" id="scrollCollection">
-    <div class="lineBackgroundColor">
+    <div class="lineBackgroundColor marginTop10">
         </div>
 </div><br>
 
-<div class="row">
+<section class="row">
         <div class="col-xs-12 col-md-4 col-md-4">
             <?php
                 $id = $_GET['collection_name'];
                 $dirname = "img/collections/$id/";
+                $thumbDirectory = "thumb/";
                 $images = glob($dirname."*.*");
                     foreach($images as $image) {
+                        $imageNameSubstring = substr($image, strrpos($image, '/') + 1);
+                        $imageNameSubstringWithNoJpg = strtok($imageNameSubstring, '.');
+                        $end = "m.jpg";                           
                         echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
-                        <img src="'.$image.'" class="img-thumbnail" /></a><br />';
+                        <img src="'.$dirname.$thumbDirectory.$imageNameSubstringWithNoJpg.$end.'" class="img-thumbnail" /></a><br />';
                     }
             ?>
         </div>
@@ -49,6 +53,6 @@
                 }
                     mysqli_close($link);
         ?>
-</div>
+</section>
 <br>
 <br>

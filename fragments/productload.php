@@ -8,10 +8,15 @@
             <?php
                 $id = $_GET['product_name'];
                 $dirname = "img/products/$id/";
+                $thumbDirectory = "thumb/";
                 $images = glob($dirname."*.*");
-                    foreach($images as $image) {         
+                    foreach($images as $image) { 
+                        $imageNameSubstring = substr($image, strrpos($image, '/') + 1);
+                        $imageNameSubstringWithNoJpg = strtok($imageNameSubstring, '.');
+                        $end = "m.jpg";                           
                         echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
-                        <img src="'.$image.'" class="img-thumbnail" /></a><br><br>';
+                        <img src="'.$dirname.$thumbDirectory.$imageNameSubstringWithNoJpg.$end.'" class="img-thumbnail"/>
+                        </a><br><br>';
                     }
             ?>
 </div>

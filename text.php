@@ -6,10 +6,9 @@
 <?php include 'fragments/preloader.html';?>
 <?php include 'fragments/header.html';?>
 <div class="row jumbotron marginTopBottom textsBackgroud"> 
-        <div class="col-xs-12 col-sm-4 col-md-4 textSide centerTextAlign">
+        <div class="col-xs-12 col-sm-4 col-md-4 textSide centerTextAlign marginBottom40">
             <?php
             $col = $_GET['col'];
-    
             if($col == "returns"){
                 $col = " Reklamacje i Zwroty";
                 $icon = "repeat";
@@ -42,25 +41,31 @@
             echo $col;
              ?>
             </div> 
-        <article class="col-xs-12 col-sm-8 col-md-8 texts">
-<?php
-                $col = $_GET['col'];
-                include 'php/connection.php';
-                mysqli_set_charset($link, "utf8");
-                $strSQL = "SELECT * FROM texts";
-	            $rs = mysqli_query($link, $strSQL);
-	            while($row = mysqli_fetch_array($rs)) {
-                    echo $row[$col];
-                }
-                mysqli_close($link);
-?>
-
-        </article>
+<article class="col-xs-12 col-sm-8 col-md-8 texts" id="content">
+        <?php
+                        $col = $_GET['col'];
+                        include 'php/connection.php';
+                        mysqli_set_charset($link, "utf8");
+                        $strSQL = "SELECT * FROM texts";
+                        $rs = mysqli_query($link, $strSQL);
+                        while($row = mysqli_fetch_array($rs)) {
+                            echo $row[$col];
+                        }
+                        mysqli_close($link);
+        ?>
+</article>
 </div>
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/facebook.html';?>
 <?php include 'fragments/footer.html';?>
 <?php include 'fragments/modal.html';?>
-<?php include 'fragments/js.html';?>  
+<?php include 'fragments/js.html';?>
+
+<script>
+$(document).ready(function(){
+    $('#content').removeOrphans();
+});
+</script>
+
 </body>
 </html>

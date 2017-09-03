@@ -17,6 +17,7 @@
                 </list>
               </option>
               <option name="id" value="0" />
+              <option name="includePattern" value="*" />
               <option name="lessDirPath" value="$PROJECT_DIR$/less" />
               <option name="name" value="less" />
             </LessProfile>

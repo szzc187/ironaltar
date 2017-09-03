@@ -13,8 +13,13 @@
 <?php include 'fragments/js.html';?>  
     <script>
         $(function() {
-            $(window).scrollTop($('#scrollProduct').offset().top);
+            if (window.screen.availHeight < 900){
+            $(window).scrollTop($('#scrollCollection').offset().top);
+            }else{
+            $(window).scrollTop($('#scrollProductButton').offset().top);
+            }
         });
     </script>
 </body>
 </html>
+

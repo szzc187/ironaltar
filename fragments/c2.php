@@ -2,7 +2,8 @@
         <div class="col-xs-5 col-sm-5 col-md-5"></div>
         <div class="col-xs-7 col-sm-7 col-md-7 leftTextAlign productsTitle headersFont" id="scrollProductButton">PRODUKTY</div>
     </div>
-<section class="car marginTopBottom10 marginSlick"> 
+<section class="marginTopBottom10 marginSlick">
+<div class="car">
 <?php
   include 'php/connection.php';
   $strSQL = "SELECT * FROM product ORDER BY id ASC";
@@ -22,4 +23,5 @@
     }
     	mysqli_close($link);
 ?>
+</div>
 </section>

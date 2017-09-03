@@ -87,12 +87,6 @@
     border-color: @mainWhite;
 }
 
-@import 'footer.less';
-@import 'c1.less';
-@import 'c2.less';
-@import 'mediaq.less';
-@import 'blueFrameRemove.less';
-
 .img-thumbnail{
     border-color: @footerGrey;
     // background: @footerGrey;
@@ -101,3 +95,24 @@
     height: 60%;
     width: auto;
 }
+.verticalMiddleAlign{
+    position: relative;
+    top: 20%;
+}
+.zindex{
+    z-index:1000;
+}
+.imageOne{
+display: inline-block;
+max-width: 32%;
+}
+.imageTwo{
+display:inline-block;
+max-width:65%;
+float: right;
+}
+@import 'footer.less';
+@import 'c1.less';
+@import 'c2.less';
+@import 'mediaq.less';
+@import 'blueFrameRemove.less';
