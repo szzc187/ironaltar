@@ -4,7 +4,7 @@
 </div>
 <br><br>
 <section class="row">
-<div class="col-xs-12 col-md-4 col-md-4">
+<div class="col-xs-12 col-md-4 col-md-4 centerTextAlign">
             <?php
                 $id = $_GET['product_name'];
                 $dirname = "img/products/$id/";
@@ -15,12 +15,11 @@
                         $imageNameSubstringWithNoJpg = strtok($imageNameSubstring, '.');
                         $end = "m.jpg";                           
                         echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
-                        <img src="'.$dirname.$thumbDirectory.$imageNameSubstringWithNoJpg.$end.'" class="img-thumbnail"/>
+                        <img src="'.$dirname.$thumbDirectory.$imageNameSubstringWithNoJpg.$end.'" class="img-thumbnail" alt="'.$id.'" title="'.$id.'"/>
                         </a><br><br>';
                     }
             ?>
-</div>
-        
+</div>  
 <?php  
                 $id = $_GET['product_name'];
                 include 'php/connection.php';
@@ -50,8 +49,8 @@
                                 <div class="lineBackgroundColor"></div><br>
                         </div>
                         ';}
-    	mysqli_close($link);
+    	        mysqli_close($link);
 ?>    
 </section>
-<br>
-<br>
+
+

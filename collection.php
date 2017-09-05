@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="pl-PL">
 <head>
 <?php include 'fragments/head.html';?> 
 </head>

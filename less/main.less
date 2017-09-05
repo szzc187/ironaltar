@@ -4,6 +4,7 @@
 @secondGrey: grey;
 @footerButtonGrey: #dcdde1;
 @margin40px: 40px;
+@margin25px: 25px;
 @margin10px: 10px;
 
 @import 'fonts.less';
@@ -48,6 +49,10 @@
     margin-top: @margin40px;
     margin-bottom: @margin40px;
 }
+.marginTopBottomPr2{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 .marginTopBottom10{
     margin-top: @margin10px;
     margin-bottom: @margin10px;
@@ -61,12 +66,15 @@
     padding-right: @margin10px;
 }
 .marginSlick{
-    margin-left: @margin10px;
-    margin-right: @margin10px;
+    margin-left: @margin25px;
+    margin-right: @margin25px;
 }
 .greyLineMargin{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.minusMargin{
+    margin-top: -20px;
 }
 .lineBackgroundColor{
     background-color: @footerGrey;
@@ -110,6 +118,12 @@ max-width: 32%;
 display:inline-block;
 max-width:65%;
 float: right;
+}
+.brandPosition{
+    line-height: 60%;
+}
+textarea {
+    resize: vertical;
 }
 @import 'footer.less';
 @import 'c1.less';
