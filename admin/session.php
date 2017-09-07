@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
 <head>
-<?php include 'fragments/head.html';?> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9" />
+ <link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container-fluid">
 <?php
 session_start();
-require('php/connection.php');
+$_SESSION['userName'] = 'Root';
+require('../php/connection.php');
 if (isset($_POST['username']) and isset($_POST['password'])){
 $username = $_POST['username'];
 $password = $_POST['password'];
@@ -57,10 +62,9 @@ echo '
                                 <td>$row[product_price]</td>
                                 <td>$row[product_type]</td>
                                 <td>
-                                    <button type='button' class='btn btn-warning'>Edycja</button>
-                                    <button type='button' class='btn btn-danger'>Usuń</button>
+                                    <a href='show.php?type=product&product_name=".$row[product_name]."'><button type='button' class='btn btn-success'>Pokaż</button></a>
                                     </td>
-                                <td><img src='img/products/".$filename.".jpg' height='20%' width='20%'></img></td>
+                                <td><img src='../img/products/".$filename.".jpg' height='20%' width='20%'></img></td>
                             </tr>
                             "
                 ;}
@@ -98,9 +102,10 @@ echo '
                                 <td>$row[collection_name]</td>
                                 <td>$row[collection_price]</td>
                                 <td>$row[collection_price]</td>
-                                <td><button type='button' class='btn btn-warning'>Edycja</button></td>
-                                <td><button type='button' class='btn btn-danger'>Usuń</button></td>
-                                   <td><img src='img/collections/".$filename.".jpg' height='20%' width='20%'></img></td>
+                                <td>
+                                <a href='show.php?type=collection&collection_name=".$row[collection_name]."'><button type='button' class='btn btn-success'>Pokaż</button></a>
+                                </td>
+                                   <td><img src='../img/collections/".$filename.".jpg' height='20%' width='20%'></img></td>
                             </tr>
                             "
                 ;}
@@ -110,6 +115,63 @@ echo'
 </div>';
 
 
+echo '
+<div class="row">
+  <h2>Teskty</h2>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Współpraca</th>
+        <th>Dostawa</th>
+        <th>Indywidualne zamówienia</th>
+        <th>Realizacja zamówienia</th>
+        <th>Regulamin</th>
+        <th>Zwroty</th>
+        <th>O nas</th>
+      </tr>
+    </thead>
+     <tbody>
+      <tr>
+            <td>
+            <a href="show.php?type=texts&texts_name=coop"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+
+            <td>
+            <a href="show.php?type=texts&texts_name=delivery"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+
+            <td>
+            <a href="show.php?type=texts&texts_name=individualOrders"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+
+            <td>
+            <a href="show.php?type=texts&texts_name=order"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+
+            <td>
+            <a href="show.php?type=texts&texts_name=regulations"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+
+            <td>
+            <a href="show.php?type=texts&texts_name=returns"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+
+            <td>
+            <a href="show.php?type=texts&texts_name=about"><button type="button" class="btn btn-success">Pokaż</button></a>
+            </td>
+            
+            
+      </tr>
+      </tbody>
+  </table>
+</div>';                 
+                
+             
+
+
+
+                
+
 
 
 }else{
@@ -117,6 +179,6 @@ echo $fmsg;}
 ?>
 
 </div>
-<?php include 'fragments/js.html';?>
+<?php include '../fragments/js.html';?>
 </body>
 </html>

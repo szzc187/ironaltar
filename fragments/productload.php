@@ -28,14 +28,13 @@
 	            $rs = mysqli_query($link,$strSQL);
 	            while($row = mysqli_fetch_array($rs)) {
                         echo '
-                        <div class="col-xs-12 col-sm-8 col-md-8">
+                        <div class="col-xs-12 col-sm-8 col-md-8" id="content">
                                 <h2>'.$row['product_name'].'</h2><br>
                                 <a href="collection.php?collection_name=Komplet%20'.$row['product_collection'].'"><h4>Komplet '.$row['product_collection'].'</h4><br></a>
                                 <h5>'.$row['product_desc'].'</h5><br>
                                 <h4>Wykonanie</h4>
                                 <h5>'.$row['product_made'].'</h5><br><br>
-                        </div>
-                        <div class="col-xs-12 col-sm-8 col-md-8">
+                        
                                 <h3>Cena: '.$row['product_price'].' zł</h3><br>
                                 <div class="lineBackgroundColor"></div><br>
                                 <h4>Wymiary</h4>

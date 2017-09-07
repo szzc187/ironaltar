@@ -26,11 +26,18 @@
                             $strSQL = "SELECT * FROM collection WHERE collection_name='$id'";
                             $rs = mysqli_query($link,$strSQL);
                             while($row = mysqli_fetch_array($rs)) {
-                
+                                $name = $row['collection_name2'];
+                                $filename1 = strtok($name,  ' ');
+                                $filename2 = substr($name, strrpos($name, ' ') + 1);
                             echo '
-                            <div class="col-xs-12 col-sm-8 col-md-8">
+                            <div class="col-xs-12 col-sm-8 col-md-8" id="content">
                                     <h1>'.$row['collection_name'].'</h1><br>
-                                    <h4>'.$row['collection_name2'].'</h4>
+
+                                    <h4>
+                                    <a href="product.php?product_name=Stolik%20kawowy%20'.$filename1.'">Stolik kawowy</a> + 
+                                    <a href="product.php?product_name=Stolik%20pomocniczy%20'.$filename2.'">stolik pomocniczy</a>
+                                    </h4>
+                                   
                                     <h5>'.$row['collection_desc'].'</h5><br>
                                     <h4>Wykonanie</h4>
                                     <h5>'.$row['collection_made'].'</h5><br><br>
@@ -46,12 +53,10 @@
                                     <div class="lineBackgroundColor"></div><br>
                                     <h4>Termin realizacji:</h4>
                                     <h5>Około '.$row['collection_production_time'].' dni roboczych.</h5><br>
-                                    <div class="lineBackgroundColor"></div><br>
+                                    <div class="lineBackgroundColor"></div>
                             </div>
                             ';
                 }
                     mysqli_close($link);
         ?>
 </section>
-<br>
-<br>

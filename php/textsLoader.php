@@ -10,7 +10,7 @@
          if($col == "delivery"){
                 echo '
                 <br><br>
-                <a class="example-image-link" href="img/Cennik_DPD_2017.jpg" data-lightbox="example-set" data-title="Click">Zobacz cennik dpd</a>
+                <a class="example-image-link" href="img/Cennik_DPD_2017.jpg" data-lightbox="example-set" data-title="Click">Zobacz cennik DPD</a>
                      ';
           }
           mysqli_close($link);

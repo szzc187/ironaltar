@@ -21,6 +21,11 @@
             }
         });
     </script>
+    <script>
+    $(document).ready(function(){
+        $('#content').removeOrphans();
+    });
+</script>
 </body>
 </html>
 
