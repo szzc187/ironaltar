@@ -14,15 +14,23 @@
   color: @thirdGray;
 }
 .footerBox{
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
  height: 70px;
  cursor: pointer;
 }
 .footerBoxInner{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         height: auto;
-        align-items: center; //optional
-        justify-content: center; //optional
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
 }
 
 //Cricle buttons on footer

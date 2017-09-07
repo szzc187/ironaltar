@@ -12,7 +12,7 @@
 /* Large desktop 
 @media (min-width: 1200px) { ... }
 */
-@media (min-width: 979px) { 
+@media (min-width: 979px){ 
             .navbar-brand {
                 display: none;
             }
@@ -39,9 +39,15 @@
                     width: auto; 
                     height: 340px;
                     overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center; //optional
-                    justify-content: center; //optional
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
                  #br{
                         display: none;
@@ -72,17 +78,28 @@
 }
                 .thumbnail{        
                     width: 270px; 
-                    height: 46vw;
+                    height: 43vw;
                     text-align: center;  
                 }
                 .thumbnailImg{
                     width: auto; 
                     height: 35vw;
                     overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center; //optional
-                    justify-content: center; //optional
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                     }
+                    .textProductThumbnail1{
+                        font-size: 16px;
+                    }
+                    .textProductThumbnail2{
+                        font-size: 16px;}
                     #br{
                         display: none;
                     }
@@ -100,16 +117,22 @@
                     }
                 .thumbnail{        
                     width: 270px; 
-                    height: 57vw;
+                    height: 46vw;
                     text-align: center;  
                 }
                 .thumbnailImg{
                     width: auto; 
-                    height: 48vw;
+                    height: 35vw;
                     overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center; //optional
-                    justify-content: center; //optional
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
                 .textProductThumbnail{
                     position:absolute;  
@@ -130,6 +153,11 @@
                     position: relative;
                     top: 5%;
                      }
+                    .textProductThumbnail1{
+                        font-size: 17px;
+                    }
+                    .textProductThumbnail2{
+                        font-size: 17px;}
  }
  @media (max-width: 798px) { 
 .navbar {
@@ -142,6 +170,36 @@
                     margin-bottom: 0;
                     font-size: 17px;
                     }
+                    .thumbnail{        
+                    width: 270px; 
+                    height: 58vw;
+                    text-align: center;  
+                }
+                .thumbnailImg{
+                    width: auto; 
+                    height: 49vw;
+                    overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                }
+                .textProductThumbnail{
+                    position:absolute;  
+                    bottom:18;
+                    left: 0;
+                    right: 0;
+                    }
+                .textProductThumbnail1{
+                        font-size: 17px;
+                    }
+                .textProductThumbnail2{
+                        font-size: 17px;}
  }
  @media (max-width: 680px) { 
                 #banner { 
@@ -150,24 +208,27 @@
                 #numberDesktop {
                     display: none; 
                     }
-               // #logotyp { 
-                //    display: none; 
-                 //   }
                 #doubleLine { 
                     display: none; 
                     }
                 .thumbnail{        
                     width: 270px; 
-                    height: 57vw;
+                    height: 59vw;
                     text-align: center;  
                 }
                 .thumbnailImg{
                     width: auto; 
                     height: 49vw;
                     overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center; //optional
-                    justify-content: center; //optional
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
                 .textProductThumbnail{
                     position:absolute;  
@@ -204,9 +265,15 @@
                     width: auto; 
                     height: 46vw;
                     overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center; //optional
-                    justify-content: center; //optional
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
                 .textProductThumbnail{
                     position:absolute;  
@@ -240,28 +307,44 @@
 @media (max-width: 481px) { 
                     .thumbnail{        
                     width: 270px; 
-                    height: 54vw;
+                    height: 52vw;
                     text-align: center;  
                 }
                     .thumbnailImg{
                     width: auto; 
                     height: 43vw;
                     overflow: auto;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
                     display: flex;
-                    align-items: center; //optional
-                    justify-content: center; //optional
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
                 }
                     .textProductThumbnail{
                     position:absolute;  
-                    bottom:18;
+                    bottom:18px;
                     left: 0;
                     right: 0;
                     }
                     .textProductThumbnail1{
                         font-size: 11px;
+                        margin-right:  10px;
+                        margin-left: 10px;
                     }
                     .textProductThumbnail2{
                         font-size: 11px;
+                        margin-right:  10px;
+                        margin-left: 10px;
+                    }
+                    .textProductThumbnail1{
+                        font-size: 8px;
+                    }
+                    .textProductThumbnail2{
+                        font-size: 8px;
                     }
                     .productsTitle{                
                     font-size: 15px;
@@ -279,28 +362,34 @@
 @media (max-width: 361px) {  
                     .thumbnail{        
                     width: 170px; 
-                    height: 50vw;
+                    height: 49vw;
                     text-align: center;  
                     }
                     .thumbnailImg{
                         width: auto; 
                         height: 37vw;
                         overflow: auto;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        align-items: center; //optional
-                        justify-content: center; //optional
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                     }
                     .textProductThumbnail{
                         position:absolute;  
-                        bottom:16;
+                        bottom:22px;
                         left: 0;
                         right: 0;
                     }
                     .textProductThumbnail1{
-                        font-size: 9px;
+                        font-size: 8px;
                     }
                     .textProductThumbnail2{
-                        font-size: 9px;
+                        font-size: 8px;
                     }
                     .verticalMiddleAlign{
                     position: relative;
@@ -311,16 +400,22 @@
 @media (max-width: 280px) {  
                     .thumbnail{        
                     width: 270px; 
-                    height: 50vw;
+                    height: 57vw;
                     text-align: center;  
                     }
                     .thumbnailImg{
                         width: auto; 
                         height: 37vw;
                         overflow: auto;
+                        display: -webkit-box;
+                        display: -ms-flexbox;
                         display: flex;
-                        align-items: center; //optional
-                        justify-content: center; //optional
+                        -webkit-box-align: center;
+                            -ms-flex-align: center;
+                                align-items: center;
+                        -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                                justify-content: center;
                     }
                     .textProductThumbnail{
                         position:absolute;  

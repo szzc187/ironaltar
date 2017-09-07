@@ -15,7 +15,7 @@ $('.car').slick({
       }
     },
     {
-      breakpoint: 800,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1

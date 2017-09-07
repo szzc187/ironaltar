@@ -15,7 +15,7 @@
 <?php include 'fragments/js.html';?>  
     <script>
         $(function() {
-            if (window.screen.availHeight < 900){
+            if (window.screen.availHeight < 1170){
             $(window).scrollTop($('#scrollCollection').offset().top);
             }else{
             $(window).scrollTop($('#scrollCollectionHd').offset().top);

@@ -2,9 +2,8 @@
     <div class="lineBackgroundColor marginTop10">
         </div>
 </div><br>
-
 <section class="row">
-        <div class="col-xs-12 col-md-4 col-md-4 centerTextAlign">
+        <div class="col-xs-12 col-sm-4 col-md-4 centerTextAlign">
             <?php
                 $id = $_GET['collection_name'];
                 $dirname = "img/collections/$id/";
@@ -14,8 +13,8 @@
                         $imageNameSubstring = substr($image, strrpos($image, '/') + 1);
                         $imageNameSubstringWithNoJpg = strtok($imageNameSubstring, '.');
                         $end = "m.jpg";                           
-                        echo '<a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
-                        <img src="'.$dirname.$thumbDirectory.$imageNameSubstringWithNoJpg.$end.'" class="img-thumbnail" alt="'.$id.'" title="'.$id.'" /></a><br />';
+                        echo '<div class="col-xs-6 col-sm-12 col-md-12"><a class="example-image-link" href="'.$image.'" data-lightbox="example-set" data-title="Click">
+                        <img src="'.$dirname.$thumbDirectory.$imageNameSubstringWithNoJpg.$end.'" class="img-thumbnail" alt="'.$id.'" title="'.$id.'" /></a></div>';
                     }
             ?>
         </div>
@@ -29,7 +28,7 @@
                             while($row = mysqli_fetch_array($rs)) {
                 
                             echo '
-                            <div class="col-xs-12 col-md-8 col-md-8">
+                            <div class="col-xs-12 col-sm-8 col-md-8">
                                     <h1>'.$row['collection_name'].'</h1><br>
                                     <h4>'.$row['collection_name2'].'</h4>
                                     <h5>'.$row['collection_desc'].'</h5><br>
