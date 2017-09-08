@@ -254,7 +254,6 @@ ul {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   width: 100%;
-  /* use this, or not */
   margin: auto;
 }
 .overlay {
@@ -341,12 +340,6 @@ ul {
     width: 75%;
   }
 }
-/*
-@media (min-width: 767px){    }
-*/
-/* Large desktop 
-@media (min-width: 1200px) { ... }
-*/
 @media (min-width: 979px) {
   .navbar-brand {
     display: none;

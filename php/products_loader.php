@@ -20,7 +20,7 @@ function loadItems($type,$query)
                 echo '
                 <div class="col-xs-12 col-sm-6 col-md-4 centerTextAlign">
                  <a href="'.$type.'.php?'.$type.'_name='.$name.'">
-                 <img src="img/'.$type.'s/'.$name.'/thumb/'.$filenameFirst.'_'.$filename.'_1m.jpg" alt="..." class="img-thumbnail" alt="'.$filename.'" title="'.$filename.'">
+                 <img src="img/'.$type.'s/'.$name.'/thumb/'.$filenameFirst.'_'.$filename.'_1m.jpg" class="img-thumbnail" alt="'.$filename.'" title="'.$filename.'">
                  </a>
                 </div>
                 ';}
