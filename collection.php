@@ -7,7 +7,7 @@
 <?php include 'fragments/preloader.html';?>
 <?php include 'fragments/header.html';?>
 <?php include 'fragments/c1.php';?>
-<?php include 'fragments/collectionload.php';?>
+<?php include 'fragments/collectionDetailsload.php';?>
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/facebook.html';?>
 <?php include 'fragments/footer.html';?>

@@ -28,7 +28,7 @@
 	            $rs = mysqli_query($link,$strSQL);
 	            while($row = mysqli_fetch_array($rs)) {
                         echo '
-                        <div class="col-xs-12 col-sm-8 col-md-8" id="content">
+                        <div class="col-xs-12 col-sm-8 col-md-8 detailsPagesH" id="content">
                                 <h2>'.$row['product_name'].'</h2><br>
                                 <a href="collection.php?collection_name=Komplet%20'.$row['product_collection'].'"><h4>Komplet '.$row['product_collection'].'</h4><br></a>
                                 <h5>'.$row['product_desc'].'</h5><br>
@@ -44,7 +44,7 @@
                                 <h5>'.$row['product_material'].'</h5><br>
                                 <div class="lineBackgroundColor"></div><br>
                                 <h4>Termin realizacji:</h4>
-                                <h5>Około '.$row['product_production_time'].' dni roboczych.</h5><br>
+                                <h5>Do '.$row['product_production_time'].' dni roboczych.</h5><br>
                                 <div class="lineBackgroundColor"></div><br>
                         </div>
                         ';}

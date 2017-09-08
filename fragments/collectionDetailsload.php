@@ -30,8 +30,8 @@
                                 $filename1 = strtok($name,  ' ');
                                 $filename2 = substr($name, strrpos($name, ' ') + 1);
                             echo '
-                            <div class="col-xs-12 col-sm-8 col-md-8" id="content">
-                                    <h1>'.$row['collection_name'].'</h1><br>
+                            <div class="col-xs-12 col-sm-8 col-md-8 detailsPagesH" id="content">
+                                    <h2>'.$row['collection_name'].'</h2><br>
 
                                     <h4>
                                     <a href="product.php?product_name=Stolik%20kawowy%20'.$filename1.'">Stolik kawowy</a> + 
@@ -52,7 +52,7 @@
                                     <h5>'.$row['collection_material'].'</h5><br>
                                     <div class="lineBackgroundColor"></div><br>
                                     <h4>Termin realizacji:</h4>
-                                    <h5>Około '.$row['collection_production_time'].' dni roboczych.</h5><br>
+                                    <h5>Do '.$row['collection_production_time'].' dni roboczych.</h5><br>
                                     <div class="lineBackgroundColor"></div>
                             </div>
                             ';
