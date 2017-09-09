@@ -1,0 +1,15 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+.overlay {
+  color: #fff;
+  position: absolute;
+  z-index: 12;
+  margin: 1% 0 0 0;
+  float: right;
+  background: #97aebe;
+  font-size: 25px;
+  font-weight: bold;
+}

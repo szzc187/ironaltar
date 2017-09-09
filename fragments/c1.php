@@ -1,9 +1,10 @@
 <section class="row marginTop10" id="scrollCollectionHd">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
         <div class="col-xs-7 col-sm-7 col-md-7 overlay rightTextAlign headersFont">KOLEKCJE</div><div class="col-xs-5 col-sm-5 col-md-5"></div>
+        <div class="carousel-inner">
+        
                 <div class="item active">
-                    <a href="collection.php?collection_name=Komplet PERSEUS"><img src="img/collections/perseus.jpg" /></a>
+                    <a href="collection.php?collection_name=Komplet PERSEUS"><img src="img/collections/perseus.jpg" alt="Komplet PERSEUS" title="Komplet PERSEUS"/></a>
                 </div>
     <?php
                 include 'php/connection.php';
@@ -13,7 +14,7 @@
                 while($row = mysqli_fetch_array($rs)) {
                 $collectionName = strtolower(substr($row['collection_name'], strrpos($row['collection_name'], ' ') + 1));
                 echo '<div class="item">
-                            <a href="collection.php?collection_name='.$row['collection_name'].'"><img src="img/collections/'.$collectionName.'.jpg"/></a>
+                            <a href="collection.php?collection_name='.$row['collection_name'].'"><img src="img/collections/'.$collectionName.'.jpg" alt="'.$row['collection_name'].'" title="'.$row['collection_name'].'"/></a>
                       </div>';
                 }
                 mysqli_close($link);

@@ -14,7 +14,7 @@
             echo '
             <div class="col-sm-6 col-md-4 ">
               <div class="thumbnail">
-                <div class="caption thumbnailImg"><a href="product.php?product_name='.$row['product_name'].'"><img src="img/products/'.$productName.'.jpg" /></a></div>
+                <div class="caption thumbnailImg"><a href="product.php?product_name='.$row['product_name'].'"><img src="img/products/'.$productName.'.jpg" alt="'.$row['product_name'].'" title="'.$row['product_name'].'"/></a></div>
               <div class="caption textProductThumbnail">
                 <div class="textProductThumbnail1">'.$row['product_name'].'</div>
                 <div class="textProductThumbnail2"><strong>cena: '.$row['product_price'].' zł</strong></div>

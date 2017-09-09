@@ -40,7 +40,8 @@ $id = $_GET[$type.'_name'];
                     
 
                     echo '
-                        <div class="col-xs-12 col-sm-8 col-md-8">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
                                 <h2>'.$row[$type.'_name'].' <a href="edit.php?type='.$type.'&atr='.$type.'_name&'.$type.'_name='.$row[$type.'_name'].'">
                                 <button type="button" class="btn btn-warning">Edycja</button></a></h2>
 
@@ -54,7 +55,7 @@ $id = $_GET[$type.'_name'];
                                 <h5>'.$row[$type.'_made'].' <a href="edit.php?type='.$type.'&atr='.$type.'_made&'.$type.'_name='.$row[$type.'_name'].'">
                                 <button type="button" class="btn btn-warning">Edycja</button></a></h5>
                         </div>
-                        <div class="col-xs-12 col-sm-8 col-md-8">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
                                 <h3>Cena: '.$row[$type.'_price'].' zł <a href="edit.php?type='.$type.'&atr='.$type.'_price&'.$type.'_name='.$row[$type.'_name'].'">
                                 <button type="button" class="btn btn-warning">Edycja</button></a></h3>
 
@@ -79,14 +80,34 @@ $id = $_GET[$type.'_name'];
                                 <h5>Około '.$row[$type.'_production_time'].' dni roboczych. <a href="edit.php?type='.$type.'&atr='.$type.'_production_time&'.$type.'_name='.$row[$type.'_name'].'">
                                 <button type="button" class="btn btn-warning">Edycja</button></a></h5>
                                 <div class="lineBackgroundColor"></div>
+                        </div><br>
                         </div>
                         ';
+                
+                echo '<div class="row">';
+                $types = $type."s";
+                $id = $row[$type.'_name'];
+                $dirname = "../img/$types/$id/";
+                $thumbDirectory = "thumb/";
+                $images = glob($dirname."*.*");
+                echo '<a href=""><button type="button" class="btn btn-success">Dodaj zdjęcie</button></a>';
+                    foreach($images as $image) { 
+                        $nameFromIdExtracted = strtolower(substr($id, strrpos($id, ' ') + 1));
+                        if (strpos($image, $id) !== false) {
+                                                          
+                        echo '<div class="col-xs-2 col-sm-2 col-md-2">
+                        '.$image.'<br>
+                        <img src="'.$image.'" height="50%" width="50%"/>
+                        <a href="filesFun/deleteFileAndThumb.php?type='.$type.'&'.$typeToQuery.'='.$id.'"><button type="button" class="btn btn-danger">Usuń</button></a>
+                        </div>';
+                        }
+                    }
+                
 
-
-                }
-}
-
-
+                echo '</div>';
+                                }
+                        }
+                
 
 
 
