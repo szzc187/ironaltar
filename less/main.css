@@ -72,6 +72,7 @@
   background: white;
   margin-left: 10px;
   margin-right: 10px;
+  text-rendering: geometricPrecision;
 }
 .centerTextAlign {
   text-align: center;
@@ -191,6 +192,9 @@ textarea {
 .dot {
   color: #cbcfce;
 }
+.dot2 {
+  color: #dcdde1;
+}
 .footerBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -213,7 +217,7 @@ textarea {
 .btn-circle.btn-lg {
   width: 50px;
   height: 50px;
-  padding: 0px 9px;
+  padding: 0px 8px;
   font-size: 18px;
   line-height: 1.33;
   border-radius: 25px;
@@ -247,12 +251,12 @@ ul {
   list-style-type: none;
 }
 .social img {
-  height: 36px;
+  height: 28px;
+  width: auto;
   line-height: 36px;
   margin: 5% 10px 10px 0;
   padding: 0;
   text-align: center;
-  width: 36px;
   transition: all 0.5s ease 0s;
   -moz-transition: all 0.5s ease 0s;
   -webkit-transition: all 0.5s ease 0s;
