@@ -18,7 +18,6 @@
             ?>
         </article>
 </div>
-
 <?php include 'fragments/c2.php';?>
 <?php include 'fragments/facebook.html';?>
 <?php include 'fragments/footer.html';?>
