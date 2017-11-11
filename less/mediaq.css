@@ -290,6 +290,16 @@
   .overlay {
     font-size: 20px;
   }
+  .footerBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: left;
+    padding-left: 0px;
+  }
 }
 @media (max-width: 480px) {
   .thumbnail {

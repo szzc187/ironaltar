@@ -1,7 +1,4 @@
 <?php
-
-
-
 $type = $_GET['type'];
 $id = $_GET[$type.'_name'];
 $typeToQuery = $type.'_name'; 
